@@ -1,12 +1,14 @@
 ﻿console.log("Hello World");
 
-var form = document.getElementById("form");
-form.hidden = true;
+var form = $("#form");
+form.hide();
 
-var button = document.getElementById("buybutton");
-button.addEventListener("click", function () {
+var button = $("#buybutton");
+button.on("click", function () {
     alert("Buying Item")
 });
 
-var productinfo = document.getElementsByClassName("properties");
-var ListItems = productinfo.item[0].children;
+var productinfo = $(".properties li");
+productinfo.on("click", function () {
+    console.log("You clicked this " + $(this).text());
+});
