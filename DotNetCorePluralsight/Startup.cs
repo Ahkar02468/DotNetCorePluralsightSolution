@@ -22,6 +22,7 @@ namespace DotNetCorePluralsight
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
         }
     }
 }
