@@ -47,3 +47,19 @@ ul.properties li{
     border:1px solid black;
     max-width:150px;
 }
+
+#LoginToggle{
+    cursor:pointer;
+}
+
+.popup-form{
+    padding:5px;
+    border:2px black outset;
+    display:inline-block;
+}
+
+.popup-form input{
+    width:200px;
+}
+
+.popup-form la
