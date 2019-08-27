@@ -62,4 +62,11 @@ ul.properties li{
     width:200px;
 }
 
-.popup-form la
+.popup-form label{
+    width:150px;
+    display:inline-block;
+}
+
+    .popup-form [type=submit], .popup-form [type=checkbox]{
+        width:auto;
+    }
