@@ -24,6 +24,14 @@ namespace DotNetCorePluralsight.Controllers
         [HttpPost("contact")]
         public IActionResult Contact(ContactViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+                //send email
+            }
+            else
+            {
+                //show error
+            }
             //ViewBag.Title("Contact Us");
             return View();
         }
