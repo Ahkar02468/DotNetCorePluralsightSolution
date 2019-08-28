@@ -9,6 +9,7 @@ namespace DotNetCorePluralsight.ViewModels
     public class ContactViewModel
     {
         [Required]
+        [MinLength(5)]
         public string Name { get; set; }
         [Required]
         [EmailAddress]
@@ -16,7 +17,7 @@ namespace DotNetCorePluralsight.ViewModels
         [Required]
         public string Subject { get; set; }
         [Required]
-        [MaxLength(12)]
+        [MaxLength(30,ErrorMessage =("Too long"))]
         public string Message { get; set; }
     }
 }
