@@ -67,6 +67,17 @@ ul.properties li{
     display:inline-block;
 }
 
-    .popup-form [type=submit], .popup-form [type=checkbox]{
+.popup-form [type=submit], .popup-form [type=checkbox]{
         width:auto;
+}
+
+menu li{
+    display:inline;
+}
+menu li::after{
+    content: ' |';
+}
+    menu li:last-of-type::after {
+        content: "";
     }
+
